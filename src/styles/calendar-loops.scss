@@ -1,8 +1,8 @@
 @for $i from 1 through 31 {
-  .calendar__day:nth-child(#{$i}):before {
+  .calendar__day:nth-child(#{$i})::before {
     content: '#{$i}';
-    font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-family: $day-number-font-family;
+    font-size: $day-number-font-size;
   }
 }
 
